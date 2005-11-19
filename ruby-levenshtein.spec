@@ -1,6 +1,3 @@
-%define		ruby_rubylibdir	%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define		ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
-
 Summary:	Module to calculate Levenshtein distance
 Summary(pl):	Modu³ do obliczania odleg³o¶ci Levenshteina
 Name:		ruby-levenshtein
@@ -10,6 +7,7 @@ License:	GPL
 Group:		Development/Libraries
 Source0:	http://po-ru.com/files/levenshtein.rb
 # Source0-md5:	78b3632772c3baa4c00e8704339ecd04
+BuildRequires:	rpmbuild(macros) >= 1.263
 Source1:	setup.rb
 URL:		http://po-ru.com/files/levenshtein.rb
 BuildRequires:	ruby
@@ -23,12 +21,12 @@ Module to calculate Levenshtein distance.
 Modu³ do obliczania odleg³o¶ci Levenshteina.
 
 %prep
-%setup -c -T
-
-%build
+%setup -qcT
 mkdir lib
 cp %{SOURCE0} lib
 cp %{SOURCE1} .
+
+%build
 ruby setup.rb config \
 	--siterubyver=%{ruby_rubylibdir} \
 	--sodir=%{ruby_archdir}
