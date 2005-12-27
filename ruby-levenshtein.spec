@@ -2,7 +2,7 @@ Summary:	Module to calculate Levenshtein distance
 Summary(pl):	Modu³ do obliczania odleg³o¶ci Levenshteina
 Name:		ruby-levenshtein
 Version:	0.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Libraries
 Source0:	http://po-ru.com/files/levenshtein.rb
@@ -10,7 +10,7 @@ Source0:	http://po-ru.com/files/levenshtein.rb
 BuildRequires:	rpmbuild(macros) >= 1.263
 Source1:	setup.rb
 URL:		http://po-ru.com/files/levenshtein.rb
-BuildRequires:	ruby
+BuildRequires:	ruby-modules
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
