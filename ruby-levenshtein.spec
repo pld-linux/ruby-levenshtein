@@ -7,11 +7,12 @@ License:	GPL
 Group:		Development/Libraries
 Source0:	http://po-ru.com/files/levenshtein.rb
 # Source0-md5:	78b3632772c3baa4c00e8704339ecd04
-BuildRequires:	rpmbuild(macros) >= 1.263
+BuildRequires:	rpmbuild(macros) >= 1.277
 Source1:	setup.rb
 URL:		http://po-ru.com/files/levenshtein.rb
 BuildRequires:	ruby-modules
 #BuildArch:	noarch
+%ruby_mod_ver_requires_eq
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
