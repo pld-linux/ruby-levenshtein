@@ -12,7 +12,7 @@ Source1:	setup.rb
 URL:		http://po-ru.com/files/levenshtein.rb
 BuildRequires:	ruby-modules
 #BuildArch:	noarch
-%ruby_mod_ver_requires_eq
+%{?ruby_mod_ver_requires_eq}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
