@@ -1,5 +1,5 @@
 Summary:	Module to calculate Levenshtein distance
-Summary(pl):	Modu≥ do obliczania odleg≥o∂ci Levenshteina
+Summary(pl.UTF-8):   Modu≈Ç do obliczania odleg≈Ço≈õci Levenshteina
 Name:		ruby-levenshtein
 Version:	0.1
 Release:	2
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Module to calculate Levenshtein distance.
 
-%description -l pl
-Modu≥ do obliczania odleg≥o∂ci Levenshteina.
+%description -l pl.UTF-8
+Modu≈Ç do obliczania odleg≈Ço≈õci Levenshteina.
 
 %prep
 %setup -qcT
