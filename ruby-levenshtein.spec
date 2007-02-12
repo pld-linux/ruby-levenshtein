@@ -1,5 +1,5 @@
 Summary:	Module to calculate Levenshtein distance
-Summary(pl.UTF-8):   Moduł do obliczania odległości Levenshteina
+Summary(pl.UTF-8):	Moduł do obliczania odległości Levenshteina
 Name:		ruby-levenshtein
 Version:	0.1
 Release:	2
